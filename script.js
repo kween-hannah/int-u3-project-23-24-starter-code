@@ -1,69 +1,57 @@
-// Declare variables below to save the different divs of your story.
+// Save each screen and button using querySelector.
+const opening = document.querySelector(".opening-screen");
+const optionOneScreen = document.querySelector(".option-one-screen");
+const optionTwoScreen = document.querySelector(".option-two-screen");
+const optionOneEnd = document.querySelector(".option-one-end");
+const optionTwoEnd = document.querySelector(".option-two-end");
+const optionFourEnd = document.querySelector(".option-four-end");
+const optionFiveEnd = document.querySelector(".option-five-end");
 
-// Screen 1
-let optionOneBtn = document.querySelector('.option-one');
-let optionOneScreen = document.querySelector('.option-one-screen');
-let opening = document.querySelector('.opening-screen');
+const focusClassesBtn = document.querySelector(".opening-screen .option-one");
+const spendTimeFriendsBtn = document.querySelector(".opening-screen .option-two");
+const studyBtn = document.querySelector(".study-btn");
+const partyWeekendBtn = document.querySelector(".party-weekend-btn");
+const goPartyBtn = document.querySelector(".option-four");
+const finishProjectBtn = document.querySelector(".option-five");
 
-// Screen 2
-let optionTwoBtn = document.querySelector('.option-two');
-let optionTwoScreen = document.querySelector('.option-two-screen');
-let optionFourBtn = document.querySelector('.option-four');
-let optionFourScreen = document.querySelector('.option-four-end');
+function showScreen(screenToShow) {
+    const screens = [
+        opening,
+        optionOneScreen,
+        optionTwoScreen,
+        optionOneEnd,
+        optionTwoEnd,
+        optionFourEnd,
+        optionFiveEnd,
+    ];
 
-let optionFiveBtn = document.querySelector('.option-five');
-let optionFiveScreen = document.querySelector('.option-five-end');
-// screen 3
-let optionStudyBtn = document.querySelector('.option-study');
-let optionOneEnd = document.querySelector('.option-one-end');
-let optionThreeBtn = document.querySelector('.option-three');
-let optionThreeScreen = document.querySelector('.option-two-end');
+    screens.forEach((screen) => {
+        screen.style.display = "none";
+    });
 
+    screenToShow.style.display = "block";
+}
 
-
-
-// - Then fill in the blanks with the correct variables.
-
-
-optionOneBtn.addEventListener('click', function () {
-    opening.style.display = "none";
-    optionOneScreen.style.display = "block";
+focusClassesBtn.addEventListener("click", function () {
+    showScreen(optionOneScreen);
 });
 
-optionTwoBtn.addEventListener('click', function () {
-    opening.style.display = "none";
-    optionTwoScreen.style.display = "block";
+spendTimeFriendsBtn.addEventListener("click", function () {
+    showScreen(optionTwoScreen);
 });
 
-// INSERT_VARIABLE.addEventListener('click', function(){
-optionStudyBtn.addEventListener('click', function () {
-    optionOneScreen.style.display = "none";
-    optionOneEnd.style.display = "block";
-
-});
-optionThreeBtn.addEventListener('click', function () {
-optionOneScreen.style.display= "none";
-optionThreeScreen.style.display ="block";
+studyBtn.addEventListener("click", function () {
+    showScreen(optionOneEnd);
 });
 
-optionFourBtn.addEventListener('click', function () {
-optionTwoScreen.style.display = "none";
-optionFourScreen.style.display = "block";
+partyWeekendBtn.addEventListener("click", function () {
+    showScreen(optionTwoEnd);
 });
 
-optionFiveBtn.addEventListener('click', function () {
-    optionTwoScreen.style.display = "none";
-    optionFiveScreen.style.display = "block";
+goPartyBtn.addEventListener("click", function () {
+    showScreen(optionFourEnd);
 });
-// });
 
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-
-
-// });
-
-
-// INSERT_VARIABLE.addEventListener('click', function(){
-
-// });
+finishProjectBtn.addEventListener("click", function () {
+    showScreen(optionFiveEnd);
+});

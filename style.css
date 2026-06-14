@@ -1,32 +1,27 @@
-/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
- 
-.option-one-screen, 
-.option-two-screen, 
-.option-one-end, 
+/* Hide every story screen except the opening when the page loads. */
+.option-one-screen,
+.option-two-screen,
+.option-one-end,
 .option-two-end,
 .option-four-end,
-.option-five-end  {
-   display:none;
+.option-five-end {
+    display: none;
 }
 
-
-
-/* Feel free to change any of the styling below!*/
 html,
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
+    color: #1a1a1a;
     text-align: center;
     padding: 20px;
 }
 
-/* Style the title of your story */
 .title {
     font-size: 26px;
     font-weight: bold;
@@ -39,7 +34,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Style the story opening container */
 .story-opening {
     background-color: #fff;
     border: 1px solid #ccc;
@@ -48,7 +42,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Style the story image */
 .story-opening img {
     max-width: 79%;
     height: auto;
@@ -56,18 +49,15 @@ body {
     border-radius: 6px;
 }
 
-/* Style the story opening message */
 .story-opening h1 {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-/* Style the buttons container */
 .buttons {
     margin: 20px;
 }
 
-/* Style the option buttons */
 button {
     font-size: 16px;
     font-weight: 600;
@@ -87,12 +77,12 @@ button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 0 #003d82;
 }
-button:active{
+
+button:active {
     transform: translateY(2px);
     box-shadow: 0 2px 0 #003d82;
 }
 
-/* Style the screens for option one and option two */
 .option-one-screen,
 .option-two-screen,
 .option-one-end,
@@ -103,11 +93,10 @@ button:active{
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0  4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin-bottom: 10px;
 }
 
-/* Style the images in the screens */
 .option-one-screen img,
 .option-two-screen img,
 .option-one-end img,
@@ -121,7 +110,6 @@ button:active{
     border-radius: 6px;
 }
 
-/* Style the text in the screens */
 .option-one-screen h1,
 .option-two-screen h1,
 .option-one-end h1,
@@ -129,7 +117,6 @@ button:active{
 .option-four-end h1,
 .option-five-end h1 {
     font-size: 20px;
-    margin-bottom: 20px;
     margin-bottom: 20px;
     color: #333;
 }
