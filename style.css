@@ -3,7 +3,9 @@
 .option-one-screen, 
 .option-two-screen, 
 .option-one-end, 
-.option-two-end  {
+.option-two-end,
+.option-four-end,
+.option-five-end  {
    display:none;
 }
 
@@ -19,15 +21,21 @@ body {
 /* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f7f6;
     text-align: center;
     padding: 20px;
 }
 
 /* Style the title of your story */
 .title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    color: #2c3e50;
+    background-color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -37,14 +45,15 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Style the story image */
 .story-opening img {
-    max-width: 100%;
+    max-width: 79%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 6px;
 }
 
 /* Style the story opening message */
@@ -61,30 +70,40 @@ body {
 /* Style the option buttons */
 button {
     font-size: 16px;
-    padding: 10px 20px;
+    font-weight: 600;
+    padding: 12px 24px;
     margin: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 0 #0056b3;
+    transition: all 0.2s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #003d82;
+}
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #003d82;
 }
 
 /* Style the screens for option one and option two */
 .option-one-screen,
 .option-two-screen,
 .option-one-end,
-.option-two-end {
+.option-two-end,
+.option-four-end,
+.option-five-end {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0  4px 12px rgba(0, 0, 0, 0.15);
     margin-bottom: 10px;
 }
 
@@ -92,17 +111,25 @@ button:hover {
 .option-one-screen img,
 .option-two-screen img,
 .option-one-end img,
-.option-two-end img {
-    max-width: 100%;
+.option-two-end img,
+.option-four-end img,
+.option-five-end img {
+    max-width: 450px;
+    width: 100%;
     height: auto;
     margin-bottom: 10px;
+    border-radius: 6px;
 }
 
 /* Style the text in the screens */
 .option-one-screen h1,
 .option-two-screen h1,
 .option-one-end h1,
-.option-two-end h1 {
+.option-two-end h1,
+.option-four-end h1,
+.option-five-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: #333;
 }

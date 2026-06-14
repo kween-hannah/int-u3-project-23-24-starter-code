@@ -7,13 +7,15 @@ let opening = document.querySelector('.opening-screen');
 
 // Screen 2
 let optionTwoBtn = document.querySelector('.option-two');
-let optionTwoScreen = document.querySelector('.option-one-end');
+let optionTwoScreen = document.querySelector('.option-two-screen');
 let optionFourBtn = document.querySelector('.option-four');
 let optionFourScreen = document.querySelector('.option-four-end');
 
 let optionFiveBtn = document.querySelector('.option-five');
-let optionFiiveScreen = document.querySelector('.option-five-end');
+let optionFiveScreen = document.querySelector('.option-five-end');
 // screen 3
+let optionStudyBtn = document.querySelector('.option-study');
+let optionOneEnd = document.querySelector('.option-one-end');
 let optionThreeBtn = document.querySelector('.option-three');
 let optionThreeScreen = document.querySelector('.option-two-end');
 
@@ -29,16 +31,21 @@ optionOneBtn.addEventListener('click', function () {
 });
 
 optionTwoBtn.addEventListener('click', function () {
-    optionOneScreen.style.display = "none";
+    opening.style.display = "none";
     optionTwoScreen.style.display = "block";
 });
 
 // INSERT_VARIABLE.addEventListener('click', function(){
-optionThreeBtn.addEventListener('click', function () {
+optionStudyBtn.addEventListener('click', function () {
     optionOneScreen.style.display = "none";
-    optionThreeScreen.style.display = "block";
+    optionOneEnd.style.display = "block";
 
 });
+optionThreeBtn.addEventListener('click', function () {
+optionOneScreen.style.display= "none";
+optionThreeScreen.style.display ="block";
+});
+
 optionFourBtn.addEventListener('click', function () {
 optionTwoScreen.style.display = "none";
 optionFourScreen.style.display = "block";
@@ -46,7 +53,7 @@ optionFourScreen.style.display = "block";
 
 optionFiveBtn.addEventListener('click', function () {
     optionTwoScreen.style.display = "none";
-    optionFiiveScreen.style.display = "block";
+    optionFiveScreen.style.display = "block";
 });
 // });
 
